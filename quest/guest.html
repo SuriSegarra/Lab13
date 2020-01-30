@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quest.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/flurbo.png">
+        <h1>Epic Adventure Quest</h1>
+        <div class="profile">
+            <img id="avatar">
+            <span id="name"></span>
+            flurbo:<span id="flurbo"></span>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="tittle"></h2>
+        <p>
+            <img id="image">
+            <audio id="audio" autoplay></audio>
+        </p>
+        <p id="description"></p>
+        <form id="choice-form">
+            <p id="choices"></p>
+            <button>Choose</button>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../map"> Back To Map</a>
+        </section>
+    </main>
+
+    <footer>
+        <cite>
+        Icons copy/pasted from Google
+        </cite>
+    </footer>
+    <script type="module" src="quest.js"></script>
+</body>
+</html>
