@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common/main.css">
+    <!-- <link rel="stylesheet" href="home/home.css"> -->
+    <title>Adventure Quiz</title>
+</head>
+<body>
+    <header> 
+        <img id="head" src="assets/show me.gif">
+        <h1> Adventure Quest</h1>
+    </header>
+
+    <main>
+        <h2>SHOW US WHAT YOU GOT...</h2>
+        <form id="user-sign-up">
+            <p class="text-prompt">
+            <label for="name"> Your Name:</label>
+            <input id="name" name="name" required>
+            </p>
+            <fieldset>
+                <legend>Pick Your Character:</legend>
+                <p id="characters">
+                    <label>
+                        <input type="radio" name="race" required value="rick">
+                        <img src="assets/rick.jpeg">
+                        Rick
+                    </label>
+                    <label>
+                        <input type="radio" name="race" required value="morty">
+                        <img src="assets/morty.jpg">
+                        Morty
+                    </label>
+                    <label>
+                        <input type="radio" name="race" required value="summer">
+                        <img src="assets/Summer.jpg">
+                        Summer
+                    </label>
+                    <label type="radio" name="race" required value="mrBP">
+                        <img src="assets/Mr_poopy_butthole.png">
+                        Mr Poopybutthole
+                    </label>
+                </p>
+            </fieldset>
+            <button> I'm In</button>
+        </form>
+    </main>
+    <footer>
+        <cite>
+        Icons copy/pasted from Google
+        </cite>
+    </footer>
+    <script type="module" src="home/home.js"></script>
+</body>
+</html>
