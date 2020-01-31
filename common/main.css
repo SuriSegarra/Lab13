@@ -1,18 +1,8 @@
- #head {
-    display: inline-block;
-    width:1000px;
-    height: 800px;
-    margin: 20px;
-    font-size: 20px;
-    height: 350px;
-    border-radius: 5px;
+header{
+    width: 2000px;
 }
-img{
-    display: inline-block;
-    width:310px;
-    border: solid 1px black;
-    margin: 20px;
-    font-size: 20px;
-    height: 350px;
-    border-radius: 5px;
+.small-img{
+width: 60px;
+border:1px solid black;
+height: 80px;
 }
