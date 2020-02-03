@@ -1,7 +1,7 @@
 import loadPorfile from '../common/load-profile.js';
-import { getUser, saveUser } from '..data/api,js';
+import { getUser, saveUser } from '../data/api.js';
 import quests from '../data/quest-data.js';
-import createChoice from '.create-choice.js';
+import createChoice from './create-choice.js';
 import findById from '../common/find-by-id.js';
 import scoreQuest from './score-quest.js';
 
@@ -15,7 +15,7 @@ const questId = searchParams.get('id');
 const quest = findById(quests, questId);
 
 //if there is no such quest
-if(!quest) {
+if (!quest) {
     //send to map
     window.location = '../map';
 }
@@ -28,14 +28,16 @@ const choices = document.getElementById('choices');
 const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 
+
 //use quest that we found to manipulate de dom
 title.textContent = quest.title;
-image.src = '../assets' + quest.image;
+image.src = '../assets/quests/' + quest.image;
 description.textContent = quest.description;
 
 
 //for each of the quest choices...
 for (let index = 0; index < quest.choices.length; index++) {
+
     const choice = quest.choices[index];
     //go makea choice dom element
     const choiceDom = createChoice(choice);
@@ -48,10 +50,11 @@ choiceForm.addEventListener('submit', function(event) {
 
     //get user choice
     const formData = new FormData(choiceForm);
-    const choiceId = formData.get('choice');
+    console.log(formData);
+    const choiceId = formData.get('choices');
     //use olf to find chocies
+    console.log(quest.choices, choiceId);
     const choice = findById(quest.choices, choiceId);
-
     //get user out of local storage
     const user = getUser();
     //create a score and manipulate user state
@@ -59,6 +62,7 @@ choiceForm.addEventListener('submit', function(event) {
     //save the user
 
     saveUser(user);
+    
     choiceForm.classList('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;

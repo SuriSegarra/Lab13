@@ -1,6 +1,6 @@
-//pop user in localStorage
+
 export function saveUser(user) {
-    //getting user as a string
+
     const json = JSON.stringify(user);
     localStorage.setItem('user', json);
 }

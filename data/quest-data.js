@@ -6,8 +6,8 @@ const alien = {
         top: '89%',
         left:'44%'
     },
-    image:'assets/earth turn.jpg',
-    // action:'' 
+    image: '../assets/quests/earth turn.jpg',
+  
     description: `
     A alien entity appears with musical demands and it seeks a live performance of a catchy new song. Unfortunately, an earthquake hit the Grammy Awards presentation, killing all of Earth's most famous musicians. You have to come up with a new catchy song to save the world. What do you do? 
     `,
@@ -49,9 +49,9 @@ const cable = {
         top: '57%',
         left:'20%'
     },
-    image:'assets/cable.jpg',
+    image:'../assets/quests/cable.jpg',
     
-    // action:'' 
+    
     description: `
     The heads left. And you go chill at your house and watch TV but it sucks and your grandpa puts an interdimensional cable.  What channel would you watch?
     `,
@@ -77,18 +77,19 @@ const cable = {
        `,
         results:`Best decision ever come on. I don't even have to say anything.`,
         flurbo: 3
+    }]
+};
+    
+const parasite = {
+    id:'parasite',
+    title:'Parasite Invasion',
+    map: {
+        top: '31%',
+        left:'5%'
     },
-    {
-        const parasite = {
-            id:'parasite',
-            title:'Parasite Invasion',
-            map: {
-                top: '31%',
-                left:'5%'
-            },
-            image:'assets/parasite.jpg',
+    image:'../assets/quests/parasite.jpg',
             
-            description: `
+    description: `
             An alien parasites arrive on a planet, they implant people's minds with false memories. These telepathic little bastards embed themselves into memories and multiply to take over planets! They're disgusting, so be careful of any wacky or zany characters that pop up. Who would you trust?
     `,
 
@@ -117,3 +118,11 @@ const cable = {
     
     }]
 };
+
+const quests = [
+    alien,
+    cable,
+    parasite,
+];
+
+export default quests;
