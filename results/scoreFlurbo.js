@@ -1,11 +1,12 @@
 function scoreFlurbo(flurbo) {
     if (flurbo <= 0) {
-        return 'poor';
+        return 'dead';
     } 
-    else if (flurbo < 2) {
-        return 'modest';
+    else if (flurbo < 10) {
+        return 'frail';
     }
-    return 'rich';
+    return 'healthy';
 }
 
 export default scoreFlurbo;
+
