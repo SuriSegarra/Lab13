@@ -1,10 +1,10 @@
-//build user out of formdata object
+
 
 function makeUser(formData) {
     const user = {
         name: formData.get('name'),
         race: formData.get('race'),
-        flurbo: 35,
+        flurbo: 3,
         completed:{}
     };
     return user;
@@ -13,7 +13,7 @@ function makeUser(formData) {
 export const newMakeUser = (formData) => ({
     name: formData.get('name'),
     race: formData.get('race'),
-    flurbo:35,
+    flurbo: 3,
     completed: {}
 });
 

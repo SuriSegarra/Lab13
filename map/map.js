@@ -5,21 +5,21 @@ import createQuestLink from './create-quest.links.js';
 import createCompletedQuest from './create-completed-quest.js';
 import hasCompletedAllQuest from './has-completed-all-quests.js';
 import isDead from '../common/is-dead.js';
-import createCompletedQuest from './create-completed-quest.js';
+
 
 loadProfile();
 
 const user = getUser();
 
 if (isDead(user) || hasCompletedAllQuest(quests, user)) {
-    window.location = '../results';
+    window.location = '/results';
 
 }
 
 const nav = document.getElementById('quests');
 
 for (let i = 0; i < quests.length; i++) {
-    const quest = quest[i];
+    const quest = quests[i];
     let questDisplay = null;
 
     if (user.completed[quest.id]){
