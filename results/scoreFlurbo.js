@@ -1,8 +1,8 @@
-function scoreFlurbo(gold) {
-    if (flurbo === 0) {
+function scoreFlurbo(flurbo) {
+    if (flurbo <= 0) {
         return 'poor';
     } 
-    else if (gold < 2) {
+    else if (flurbo < 2) {
         return 'modest';
     }
     return 'rich';

@@ -29,3 +29,9 @@ main {
     border: 1px solid black;
     height: 80px;
 }
+img{
+    width: 700px;
+}
+#choices{
+    display: inline-flex;
+}

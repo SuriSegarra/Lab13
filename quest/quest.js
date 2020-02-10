@@ -40,20 +40,23 @@ for (let index = 0; index < quest.choices.length; index++) {
 
     const choice = quest.choices[index];
     //go makea choice dom element
-    const choiceDom = createChoice(choice);
+    const choiceDOM = createChoice(choice);
     //and append that choice
-    choices.appendChild(choiceDom);
+    choices.appendChild(choiceDOM);
 
 }
 choiceForm.addEventListener('submit', function(event) {
+    // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. For example, this can be useful when:---
+    //  Clicking on a "Submit" button, prevent it from submitting a form
+// Clicking on a link, prevent the link from following the URL
     event.preventDefault();
 
     //get user choice
     const formData = new FormData(choiceForm);
-    console.log(formData);
+
     const choiceId = formData.get('choices');
     //use olf to find chocies
-    console.log(quest.choices, choiceId);
+  
     const choice = findById(quest.choices, choiceId);
     //get user out of local storage
     const user = getUser();
@@ -63,10 +66,9 @@ choiceForm.addEventListener('submit', function(event) {
 
     saveUser(user);
     
-    choiceForm.classList('hidden');
+    choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
     //reload profile for new stats
     loadPorfile();
-
 });

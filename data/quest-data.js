@@ -6,7 +6,7 @@ const alien = {
         top: '89%',
         left:'44%'
     },
-    image: '../assets/quests/earth turn.jpg',
+    image:'earth turn.jpg',
   
     description: `
     A alien entity appears with musical demands and it seeks a live performance of a catchy new song. Unfortunately, an earthquake hit the Grammy Awards presentation, killing all of Earth's most famous musicians. You have to come up with a new catchy song to save the world. What do you do? 
@@ -49,7 +49,7 @@ const cable = {
         top: '57%',
         left:'20%'
     },
-    image:'../assets/quests/cable.jpg',
+    image:'cable.jpg',
     
     
     description: `
@@ -87,7 +87,7 @@ const parasite = {
         top: '31%',
         left:'5%'
     },
-    image:'../assets/quests/parasite.jpg',
+    image:'parasite.jpg',
             
     description: `
             An alien parasites arrive on a planet, they implant people's minds with false memories. These telepathic little bastards embed themselves into memories and multiply to take over planets! They're disgusting, so be careful of any wacky or zany characters that pop up. Who would you trust?

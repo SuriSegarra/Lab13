@@ -12,7 +12,7 @@ loadProfile();
 const user = getUser();
 
 if (isDead(user) || hasCompletedAllQuest(quests, user)) {
-    window.location = 'results';
+    window.location = '/results';
 
 }
 
