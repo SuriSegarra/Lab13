@@ -9,3 +9,8 @@ export const deadFlurboMessages = {
     modest:'You want me to cut to 3 weeks earlier when you were alive?',
     rich:'yeah, yeah. You win.No amount of genius can stop your dumb mediocre vacuous roots from digging into everything and everyone around you and draining them of any ability to fend you off'
 };
+export const flurboMessages = {
+    dead: 'you suuuuuuuuck',
+    fragil: 'eeeegh',
+    healthy:`you're fine`
+};
